@@ -1,0 +1,17 @@
+{
+  "appTitle": "Madrasa Sofa",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "dashboard": "Dashboard",
+  "students": "Students",
+  "teachers": "Teachers",
+  "classes": "Classes",
+  "attendance": "Attendance",
+  "results": "Results",
+  "books": "Books",
+  "fees": "Fees",
+  "english": "English",
+  "urdu": "Urdu",
+  "arabic": "Arabic"
+}

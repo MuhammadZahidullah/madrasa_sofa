@@ -1,0 +1,14 @@
+{
+  "appTitle": "مدرسة صفا",
+  "dashboard": "لوحة التحكم",
+  "students": "الطلاب",
+  "teachers": "المعلمون",
+  "classes": "الفصول",
+  "attendance": "الحضور",
+  "results": "النتائج",
+  "books": "الكتب",
+  "fees": "الرسوم",
+  "english": "الإنجليزية",
+  "urdu": "الأردية",
+  "arabic": "العربية"
+}
