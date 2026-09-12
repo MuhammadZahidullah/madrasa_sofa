@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739634769637",
+    "project_id": "madrasa-sofa-app-pk",
+    "storage_bucket": "madrasa-sofa-app-pk.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739634769637:android:bd92f9d1f97eab144dee0c",
+        "android_client_info": {
+          "package_name": "com.example.madrasa_soffa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE6iKZHXtJsRSgW5QqEqXr936Z-e4eSiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

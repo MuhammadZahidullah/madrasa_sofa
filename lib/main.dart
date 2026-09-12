@@ -10,9 +10,15 @@ import 'package:madrasa_soffa/providers/lesson_provider.dart';
 import 'package:madrasa_soffa/providers/student_provider.dart';
 import 'package:madrasa_soffa/providers/teacher_provider.dart';
 import 'package:madrasa_soffa/screens/home_screen.dart';
+import 'package:madrasa_soffa/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
