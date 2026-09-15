@@ -171,6 +171,348 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Arabic'**
   String get arabic;
+
+  /// No description provided for @welcome.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome'**
+  String get welcome;
+
+  /// No description provided for @signIn.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign In'**
+  String get signIn;
+
+  /// No description provided for @email.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get email;
+
+  /// No description provided for @password.
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get password;
+
+  /// No description provided for @enterEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter email'**
+  String get enterEmail;
+
+  /// No description provided for @enterPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter password'**
+  String get enterPassword;
+
+  /// No description provided for @invalidEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid email'**
+  String get invalidEmail;
+
+  /// No description provided for @invalidCredentials.
+  ///
+  /// In en, this message translates to:
+  /// **'Invalid credentials'**
+  String get invalidCredentials;
+
+  /// No description provided for @loginFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Login failed'**
+  String get loginFailed;
+
+  /// No description provided for @logout.
+  ///
+  /// In en, this message translates to:
+  /// **'Logout'**
+  String get logout;
+
+  /// No description provided for @loading.
+  ///
+  /// In en, this message translates to:
+  /// **'Loading'**
+  String get loading;
+
+  /// No description provided for @showPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Show password'**
+  String get showPassword;
+
+  /// No description provided for @hidePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Hide password'**
+  String get hidePassword;
+
+  /// No description provided for @admin.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin'**
+  String get admin;
+
+  /// No description provided for @teacher.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher'**
+  String get teacher;
+
+  /// No description provided for @student.
+  ///
+  /// In en, this message translates to:
+  /// **'Student'**
+  String get student;
+
+  /// No description provided for @accountDisabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Account disabled'**
+  String get accountDisabled;
+
+  /// No description provided for @accountNotConfigured.
+  ///
+  /// In en, this message translates to:
+  /// **'Account profile not configured. Contact the administrator.'**
+  String get accountNotConfigured;
+
+  /// No description provided for @unknownRole.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown role'**
+  String get unknownRole;
+
+  /// No description provided for @comingSoon.
+  ///
+  /// In en, this message translates to:
+  /// **'Coming soon'**
+  String get comingSoon;
+
+  /// No description provided for @bookProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Book Progress'**
+  String get bookProgress;
+
+  /// No description provided for @studentHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'Student History'**
+  String get studentHistory;
+
+  /// No description provided for @myStudents.
+  ///
+  /// In en, this message translates to:
+  /// **'My Students'**
+  String get myStudents;
+
+  /// No description provided for @myClasses.
+  ///
+  /// In en, this message translates to:
+  /// **'My Classes'**
+  String get myClasses;
+
+  /// No description provided for @takeAttendance.
+  ///
+  /// In en, this message translates to:
+  /// **'Take Attendance'**
+  String get takeAttendance;
+
+  /// No description provided for @enterMarks.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter Marks'**
+  String get enterMarks;
+
+  /// No description provided for @myAttendance.
+  ///
+  /// In en, this message translates to:
+  /// **'My Attendance'**
+  String get myAttendance;
+
+  /// No description provided for @myResults.
+  ///
+  /// In en, this message translates to:
+  /// **'My Results'**
+  String get myResults;
+
+  /// No description provided for @myProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'My Progress'**
+  String get myProgress;
+
+  /// No description provided for @myHistory.
+  ///
+  /// In en, this message translates to:
+  /// **'My History'**
+  String get myHistory;
+
+  /// No description provided for @manageTeachers.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage Teachers'**
+  String get manageTeachers;
+
+  /// No description provided for @manageStudents.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage Students'**
+  String get manageStudents;
+
+  /// No description provided for @manageClasses.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage Classes'**
+  String get manageClasses;
+
+  /// No description provided for @profileFetchFailed.
+  ///
+  /// In en, this message translates to:
+  /// **'Unable to load your account profile. Please try again or contact the administrator.'**
+  String get profileFetchFailed;
+
+  /// No description provided for @overviewSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Here\'s today\'s madrasa overview'**
+  String get overviewSubtitle;
+
+  /// No description provided for @assalamuAlaikum.
+  ///
+  /// In en, this message translates to:
+  /// **'Assalamu Alaikum, {name}'**
+  String assalamuAlaikum(String name);
+
+  /// No description provided for @totalEnrolled.
+  ///
+  /// In en, this message translates to:
+  /// **'Total enrolled'**
+  String get totalEnrolled;
+
+  /// No description provided for @activeTeachers.
+  ///
+  /// In en, this message translates to:
+  /// **'Active teachers'**
+  String get activeTeachers;
+
+  /// No description provided for @totalClassesSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Total classes'**
+  String get totalClassesSubtitle;
+
+  /// No description provided for @todaysAttendance.
+  ///
+  /// In en, this message translates to:
+  /// **'Today\'s attendance'**
+  String get todaysAttendance;
+
+  /// No description provided for @quickActions.
+  ///
+  /// In en, this message translates to:
+  /// **'Quick Actions'**
+  String get quickActions;
+
+  /// No description provided for @viewAll.
+  ///
+  /// In en, this message translates to:
+  /// **'View All'**
+  String get viewAll;
+
+  /// No description provided for @addStudent.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Student'**
+  String get addStudent;
+
+  /// No description provided for @addTeacher.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Teacher'**
+  String get addTeacher;
+
+  /// No description provided for @registerNewStudent.
+  ///
+  /// In en, this message translates to:
+  /// **'Register a new student'**
+  String get registerNewStudent;
+
+  /// No description provided for @registerNewTeacher.
+  ///
+  /// In en, this message translates to:
+  /// **'Register a new teacher'**
+  String get registerNewTeacher;
+
+  /// No description provided for @management.
+  ///
+  /// In en, this message translates to:
+  /// **'Management'**
+  String get management;
+
+  /// No description provided for @viewManageStudents.
+  ///
+  /// In en, this message translates to:
+  /// **'View and manage all students'**
+  String get viewManageStudents;
+
+  /// No description provided for @viewManageTeachers.
+  ///
+  /// In en, this message translates to:
+  /// **'View and manage all teachers'**
+  String get viewManageTeachers;
+
+  /// No description provided for @manageClassesSections.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage classes and sections'**
+  String get manageClassesSections;
+
+  /// No description provided for @viewManageAttendance.
+  ///
+  /// In en, this message translates to:
+  /// **'View and manage attendance'**
+  String get viewManageAttendance;
+
+  /// No description provided for @manageExamResults.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage exam results'**
+  String get manageExamResults;
+
+  /// No description provided for @trackBookProgress.
+  ///
+  /// In en, this message translates to:
+  /// **'Track book and lesson progress'**
+  String get trackBookProgress;
+
+  /// No description provided for @manageFeeRecords.
+  ///
+  /// In en, this message translates to:
+  /// **'Manage fee records'**
+  String get manageFeeRecords;
+
+  /// No description provided for @homeNav.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get homeNav;
+
+  /// No description provided for @notificationsNav.
+  ///
+  /// In en, this message translates to:
+  /// **'Notifications'**
+  String get notificationsNav;
+
+  /// No description provided for @profileNav.
+  ///
+  /// In en, this message translates to:
+  /// **'Profile'**
+  String get profileNav;
 }
 
 class _AppLocalizationsDelegate

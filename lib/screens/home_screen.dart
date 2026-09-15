@@ -10,6 +10,7 @@ import 'package:madrasa_soffa/screens/fees/fee_list_screen.dart';
 import 'package:madrasa_soffa/screens/lessons/lesson_progress_screen.dart';
 import 'package:madrasa_soffa/screens/student/student_list_screen.dart';
 import 'package:madrasa_soffa/screens/teacher/teacher_list_screen.dart';
+import 'package:madrasa_soffa/features/auth/presentation/providers/auth_provider.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -48,6 +49,14 @@ class HomeScreen extends StatelessWidget {
                 child: Text(label, style: const TextStyle(color: Colors.white)),
               );
             }).toList(),
+          ),
+          const SizedBox(width: 10),
+          IconButton(
+            icon: const Icon(Icons.logout, color: Colors.white),
+            tooltip: l10n.logout,
+            onPressed: () {
+              Provider.of<AuthProvider>(context, listen: false).logout();
+            },
           ),
           const SizedBox(width: 10),
         ],

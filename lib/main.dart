@@ -9,7 +9,13 @@ import 'package:madrasa_soffa/providers/fee_provider.dart';
 import 'package:madrasa_soffa/providers/lesson_provider.dart';
 import 'package:madrasa_soffa/providers/student_provider.dart';
 import 'package:madrasa_soffa/providers/teacher_provider.dart';
-import 'package:madrasa_soffa/screens/home_screen.dart';
+import 'package:madrasa_soffa/features/auth/data/datasources/auth_remote_data_source.dart';
+import 'package:madrasa_soffa/features/auth/data/repositories/auth_repository_impl.dart';
+import 'package:madrasa_soffa/features/auth/domain/usecases/login_user.dart';
+import 'package:madrasa_soffa/features/auth/domain/usecases/logout_user.dart';
+import 'package:madrasa_soffa/features/auth/domain/usecases/get_current_user.dart';
+import 'package:madrasa_soffa/features/auth/presentation/providers/auth_provider.dart';
+import 'package:madrasa_soffa/features/auth/presentation/screens/auth_wrapper.dart';
 import 'package:madrasa_soffa/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
@@ -42,15 +48,30 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(create: (_) => FeeProvider()..loadFees()),
         ChangeNotifierProvider(create: (_) => LessonProvider()..loadLessons()),
+        ChangeNotifierProvider(
+          create: (_) {
+            final remoteDataSource = AuthRemoteDataSource();
+            final authRepository = AuthRepositoryImpl(remoteDataSource);
+            final loginUser = LoginUser(authRepository);
+            final logoutUser = LogoutUser(authRepository);
+            final getCurrentUser = GetCurrentUser(authRepository);
+            return AuthProvider(
+              loginUser: loginUser,
+              logoutUser: logoutUser,
+              getCurrentUser: getCurrentUser,
+            );
+          },
+        ),
       ],
       child: Consumer<LocaleProvider>(
         builder: (context, localeProvider, child) {
           return MaterialApp(
+            debugShowCheckedModeBanner: false,
             title: 'Madrasa Soffa',
             theme: AppTheme.lightTheme,
             darkTheme: AppTheme.darkTheme,
             locale: localeProvider.locale,
-            localizationsDelegates: [
+            localizationsDelegates: const [
               AppLocalizations.delegate,
               GlobalMaterialLocalizations.delegate,
               GlobalWidgetsLocalizations.delegate,
@@ -61,7 +82,7 @@ class MyApp extends StatelessWidget {
               Locale('ur'),
               Locale('ar'),
             ],
-            home: const HomeScreen(),
+            home: const AuthWrapper(),
           );
         },
       ),
