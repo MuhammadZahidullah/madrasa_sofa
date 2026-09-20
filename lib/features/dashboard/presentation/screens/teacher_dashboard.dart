@@ -44,10 +44,22 @@ class TeacherDashboard extends StatelessWidget {
                 children: [
                   _buildDashboardCard(context, l10n.myStudents, Icons.people),
                   _buildDashboardCard(context, l10n.myClasses, Icons.class_),
-                  _buildDashboardCard(context, l10n.takeAttendance, Icons.check_circle_outline),
-                  _buildDashboardCard(context, l10n.enterMarks, Icons.edit_document),
+                  _buildDashboardCard(
+                    context,
+                    l10n.takeAttendance,
+                    Icons.check_circle_outline,
+                  ),
+                  _buildDashboardCard(
+                    context,
+                    l10n.enterMarks,
+                    Icons.edit_document,
+                  ),
                   _buildDashboardCard(context, l10n.bookProgress, Icons.book),
-                  _buildDashboardCard(context, l10n.studentHistory, Icons.history),
+                  _buildDashboardCard(
+                    context,
+                    l10n.studentHistory,
+                    Icons.history,
+                  ),
                 ],
               ),
             ],
@@ -69,10 +81,7 @@ class TeacherDashboard extends StatelessWidget {
           value: Locale('en'),
           child: Text('English'),
         ),
-        const PopupMenuItem<Locale>(
-          value: Locale('ur'),
-          child: Text('اردو'),
-        ),
+        const PopupMenuItem<Locale>(value: Locale('ur'), child: Text('اردو')),
         const PopupMenuItem<Locale>(
           value: Locale('ar'),
           child: Text('العربية'),
@@ -81,15 +90,19 @@ class TeacherDashboard extends StatelessWidget {
     );
   }
 
-  Widget _buildDashboardCard(BuildContext context, String title, IconData icon) {
+  Widget _buildDashboardCard(
+    BuildContext context,
+    String title,
+    IconData icon,
+  ) {
     final l10n = AppLocalizations.of(context)!;
     return Card(
       elevation: 2,
       child: InkWell(
         onTap: () {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(l10n.comingSoon)),
-          );
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(SnackBar(content: Text(l10n.comingSoon)));
         },
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

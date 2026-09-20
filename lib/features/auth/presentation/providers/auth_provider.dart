@@ -14,9 +14,9 @@ class AuthProvider with ChangeNotifier {
     required LoginUser loginUser,
     required LogoutUser logoutUser,
     required GetCurrentUser getCurrentUser,
-  })  : _loginUser = loginUser,
-        _logoutUser = logoutUser,
-        _getCurrentUser = getCurrentUser;
+  }) : _loginUser = loginUser,
+       _logoutUser = logoutUser,
+       _getCurrentUser = getCurrentUser;
 
   bool _isLoading = false;
   String? _errorMessage;
@@ -66,7 +66,9 @@ class AuthProvider with ChangeNotifier {
         notifyListeners();
         return false;
       }
-      if (profile.role != 'admin' && profile.role != 'teacher' && profile.role != 'student') {
+      if (profile.role != 'admin' &&
+          profile.role != 'teacher' &&
+          profile.role != 'student') {
         _errorMessage = 'unknown-role';
         _isProfileLoading = false;
         notifyListeners();

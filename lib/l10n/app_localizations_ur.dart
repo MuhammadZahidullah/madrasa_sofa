@@ -218,4 +218,190 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get profileNav => 'پروفائل';
+
+  @override
+  String get searchStudents => 'نام، والد کا نام، رول نمبر سے تلاش کریں...';
+
+  @override
+  String get noStudentsFound => 'کوئی طالب علم نہیں ملا';
+
+  @override
+  String get noStudentsYet => 'ابھی تک کوئی طالب علم شامل نہیں کیا گیا';
+
+  @override
+  String get errorLoadingStudents => 'طلبہ کو لوڈ کرنے میں ناکامی ہوئی';
+
+  @override
+  String get retry => 'دوبارہ کوشش کریں';
+
+  @override
+  String get rollNumber => 'رول نمبر';
+
+  @override
+  String get rollNumberPrefix => 'رول نمبر: ';
+
+  @override
+  String get fatherName => 'والد کا نام';
+
+  @override
+  String get classId => 'کلاس آئی ڈی';
+
+  @override
+  String get active => 'فعال';
+
+  @override
+  String get inactive => 'غیر فعال';
+
+  @override
+  String get edit => 'ترمیم کریں';
+
+  @override
+  String get delete => 'حذف کریں';
+
+  @override
+  String get phone => 'فون';
+
+  @override
+  String get address => 'پتہ';
+
+  @override
+  String get addNewStudent => 'نیا طالب علم شامل کریں';
+
+  @override
+  String get editStudent => 'طالب علم میں ترمیم کریں';
+
+  @override
+  String get studentName => 'طالب علم کا نام';
+
+  @override
+  String get enterStudentName => 'طالب علم کا نام درج کریں';
+
+  @override
+  String get nameRequired => 'نام ضروری ہے';
+
+  @override
+  String get enterFatherName => 'والد کا نام درج کریں';
+
+  @override
+  String get fatherNameRequired => 'والد کا نام ضروری ہے';
+
+  @override
+  String get enterRollNumber => 'رول نمبر درج کریں';
+
+  @override
+  String get rollNumberRequired => 'رول نمبر ضروری ہے';
+
+  @override
+  String get enterClassId => 'کلاس آئی ڈی درج کریں';
+
+  @override
+  String get classIdRequired => 'کلاس آئی ڈی ضروری ہے';
+
+  @override
+  String get enterPhone => 'فون نمبر درج کریں (اختیاری)';
+
+  @override
+  String get enterAddress => 'پتہ درج کریں (اختیاری)';
+
+  @override
+  String get status => 'حالت';
+
+  @override
+  String get saveStudent => 'طالب علم محفوظ کریں';
+
+  @override
+  String get updateStudent => 'طالب علم کو اپ ڈیٹ کریں';
+
+  @override
+  String get studentAddedSuccess => 'طالب علم کامیابی سے شامل کر دیا گیا';
+
+  @override
+  String get studentUpdatedSuccess => 'طالب علم کامیابی سے اپ ڈیٹ ہو گیا';
+
+  @override
+  String get studentDeletedSuccess => 'طالب علم کامیابی سے حذف ہو گیا';
+
+  @override
+  String get deleteStudentTitle => 'طالب علم کو حذف کریں';
+
+  @override
+  String deleteStudentConfirmation(String name) {
+    return 'کیا آپ واقعی $name کو حذف کرنا چاہتے ہیں؟ اس عمل کو واپس نہیں لایا جا سکتا۔';
+  }
+
+  @override
+  String get cancel => 'منسوخ کریں';
+
+  @override
+  String get unassignedStudents => 'غیر تفویض شدہ طلبہ';
+
+  @override
+  String unassignedStudentsSubtitle(int count) {
+    return '$count طلبہ کو کلاس کی ضرورت ہے';
+  }
+
+  @override
+  String get noClassesFound => 'کوئی کلاس نہیں ملی';
+
+  @override
+  String get selectClass => 'کلاس منتخب کریں';
+
+  @override
+  String get addClass => 'کلاس شامل کریں';
+
+  @override
+  String get editClass => 'کلاس تبدیل کریں';
+
+  @override
+  String get deleteClass => 'کلاس حذف کریں';
+
+  @override
+  String deleteClassConfirmation(String name) {
+    return 'کیا آپ واقعی $name کو حذف کرنا چاہتے ہیں؟ اس عمل کو واپس نہیں لایا جا سکتا۔';
+  }
+
+  @override
+  String get classNameEn => 'کلاس کا نام (انگریزی)';
+
+  @override
+  String get classNameUr => 'کلاس کا نام (اردو)';
+
+  @override
+  String get classNameAr => 'کلاس کا نام (عربی)';
+
+  @override
+  String get sortOrder => 'ترتیب';
+
+  @override
+  String get enterSortOrder => 'ترتیب درج کریں';
+
+  @override
+  String cannotDeleteClassWithStudents(int count) {
+    return 'اس کلاس کو حذف نہیں کیا جا سکتا کیونکہ اس میں $count طلبہ موجود ہیں۔ پہلے طلبہ کو منتقل کریں یا ہٹائیں۔';
+  }
+
+  @override
+  String get classAddedSuccess => 'کلاس کامیابی سے شامل ہو گئی';
+
+  @override
+  String get classUpdatedSuccess => 'کلاس کامیابی سے اپ ڈیٹ ہو گئی';
+
+  @override
+  String get classDeletedSuccess => 'کلاس کامیابی سے حذف ہو گئی';
+
+  @override
+  String get fieldRequired => 'یہ خانہ پُر کرنا لازمی ہے';
+
+  @override
+  String get invalidNumber => 'براہ کرم درست نمبر درج کریں';
+
+  @override
+  String get save => 'محفوظ کریں';
+
+  @override
+  String get classRequired => 'کلاس کا انتخاب لازمی ہے';
+
+  @override
+  String get noClassesAvailableCreateFirst =>
+      'کوئی فعال کلاس دستیاب نہیں ہے۔ براہ کرم پہلے کلاس بنائیں۔';
 }

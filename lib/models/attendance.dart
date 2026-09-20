@@ -5,7 +5,13 @@ class Attendance {
   final String date;
   final bool isPresent;
 
-  Attendance({this.id, required this.studentId, required this.classId, required this.date, required this.isPresent});
+  Attendance({
+    this.id,
+    required this.studentId,
+    required this.classId,
+    required this.date,
+    required this.isPresent,
+  });
 
   Map<String, dynamic> toMap() {
     return {

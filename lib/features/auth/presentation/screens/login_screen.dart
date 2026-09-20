@@ -26,15 +26,15 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void _submit(BuildContext context) async {
     if (!_formKey.currentState!.validate()) return;
-    
+
     final authProvider = Provider.of<AuthProvider>(context, listen: false);
     final l10n = AppLocalizations.of(context)!;
-    
+
     final success = await authProvider.login(
       _emailController.text.trim(),
       _passwordController.text,
     );
-    
+
     if (!context.mounted) return;
 
     if (!success) {
@@ -52,12 +52,9 @@ class _LoginScreenState extends State<LoginScreen> {
       } else if (authProvider.errorMessage == 'unknown-role') {
         errorMsg = l10n.unknownRole;
       }
-      
+
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(errorMsg),
-          backgroundColor: Colors.red,
-        ),
+        SnackBar(content: Text(errorMsg), backgroundColor: Colors.red),
       );
     }
   }
@@ -82,8 +79,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 localeProvider.setLocale(Locale(newValue));
               }
             },
-            items: <String>['en', 'ur', 'ar']
-                .map<DropdownMenuItem<String>>((String value) {
+            items: <String>['en', 'ur', 'ar'].map<DropdownMenuItem<String>>((
+              String value,
+            ) {
               String label = '';
               if (value == 'en') label = l10n.english;
               if (value == 'ur') label = l10n.urdu;
@@ -157,7 +155,9 @@ class _LoginScreenState extends State<LoginScreen> {
                               ? Icons.visibility
                               : Icons.visibility_off,
                         ),
-                        tooltip: _obscurePassword ? l10n.showPassword : l10n.hidePassword,
+                        tooltip: _obscurePassword
+                            ? l10n.showPassword
+                            : l10n.hidePassword,
                         onPressed: () {
                           setState(() {
                             _obscurePassword = !_obscurePassword;
@@ -179,7 +179,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   SizedBox(
                     height: 50,
                     child: ElevatedButton(
-                      onPressed: authProvider.isLoading ? null : () => _submit(context),
+                      onPressed: authProvider.isLoading
+                          ? null
+                          : () => _submit(context),
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),

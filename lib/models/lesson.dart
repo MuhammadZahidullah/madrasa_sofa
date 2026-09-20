@@ -4,7 +4,12 @@ class Lesson {
   final String subject;
   final double progress;
 
-  Lesson({this.id, required this.studentId, required this.subject, required this.progress});
+  Lesson({
+    this.id,
+    required this.studentId,
+    required this.subject,
+    required this.progress,
+  });
 
   Map<String, dynamic> toMap() {
     return {

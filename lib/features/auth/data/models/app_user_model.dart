@@ -18,7 +18,7 @@ class AppUserModel extends AppUser {
         parsedIsActive = (json['isActive'] as String).toLowerCase() == 'true';
       }
     }
-    
+
     return AppUserModel(
       uid: json['uid']?.toString() ?? '',
       name: json['name']?.toString() ?? '',

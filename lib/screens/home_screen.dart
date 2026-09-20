@@ -38,8 +38,9 @@ class HomeScreen extends StatelessWidget {
                 localeProvider.setLocale(Locale(newValue));
               }
             },
-            items: <String>['en', 'ur', 'ar']
-                .map<DropdownMenuItem<String>>((String value) {
+            items: <String>['en', 'ur', 'ar'].map<DropdownMenuItem<String>>((
+              String value,
+            ) {
               String label = '';
               if (value == 'en') label = l10n.english;
               if (value == 'ur') label = l10n.urdu;
@@ -138,7 +139,8 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 10),
               Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
               if (value.isNotEmpty) const SizedBox(height: 5),
-              if (value.isNotEmpty) Text(value, style: const TextStyle(fontSize: 20)),
+              if (value.isNotEmpty)
+                Text(value, style: const TextStyle(fontSize: 20)),
             ],
           ),
         ),

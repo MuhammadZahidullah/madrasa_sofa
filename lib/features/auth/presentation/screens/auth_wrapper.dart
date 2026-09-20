@@ -24,7 +24,10 @@ class _AuthWrapperState extends State<AuthWrapper> {
     if (!_isInit) {
       final user = FirebaseAuth.instance.currentUser;
       if (user != null) {
-        Provider.of<AuthProvider>(context, listen: false).fetchProfile(user.uid);
+        Provider.of<AuthProvider>(
+          context,
+          listen: false,
+        ).fetchProfile(user.uid);
       }
       _isInit = true;
     }
@@ -46,7 +49,8 @@ class _AuthWrapperState extends State<AuthWrapper> {
           // Now check the AuthProvider for the loaded profile.
           return Consumer<AuthProvider>(
             builder: (context, authProvider, child) {
-              if (authProvider.isProfileLoading || authProvider.appUser == null) {
+              if (authProvider.isProfileLoading ||
+                  authProvider.appUser == null) {
                 if (authProvider.errorMessage != null) {
                   return Scaffold(
                     body: Center(
@@ -55,10 +59,17 @@ class _AuthWrapperState extends State<AuthWrapper> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const Icon(Icons.error_outline, color: Colors.red, size: 64),
+                            const Icon(
+                              Icons.error_outline,
+                              color: Colors.red,
+                              size: 64,
+                            ),
                             const SizedBox(height: 16),
                             Text(
-                              _getLocalizedErrorMessage(context, authProvider.errorMessage!),
+                              _getLocalizedErrorMessage(
+                                context,
+                                authProvider.errorMessage!,
+                              ),
                               textAlign: TextAlign.center,
                               style: const TextStyle(fontSize: 18),
                             ),
@@ -87,9 +98,7 @@ class _AuthWrapperState extends State<AuthWrapper> {
                 return const StudentDashboard();
               }
 
-              return const Scaffold(
-                body: Center(child: Text('Unknown role')),
-              );
+              return const Scaffold(body: Center(child: Text('Unknown role')));
             },
           );
         }

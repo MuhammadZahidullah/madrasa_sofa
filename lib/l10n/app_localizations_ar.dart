@@ -218,4 +218,190 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get profileNav => 'الملف الشخصي';
+
+  @override
+  String get searchStudents => 'البحث بالاسم، اسم الأب، رقم القيد...';
+
+  @override
+  String get noStudentsFound => 'لم يتم العثور على طلاب';
+
+  @override
+  String get noStudentsYet => 'لم تتم إضافة أي طالب حتى الآن';
+
+  @override
+  String get errorLoadingStudents => 'فشل في تحميل الطلاب';
+
+  @override
+  String get retry => 'إعادة المحاولة';
+
+  @override
+  String get rollNumber => 'رقم القيد';
+
+  @override
+  String get rollNumberPrefix => 'رقم: ';
+
+  @override
+  String get fatherName => 'اسم الأب';
+
+  @override
+  String get classId => 'معرف الفصل';
+
+  @override
+  String get active => 'نشط';
+
+  @override
+  String get inactive => 'غير نشط';
+
+  @override
+  String get edit => 'تعديل';
+
+  @override
+  String get delete => 'حذف';
+
+  @override
+  String get phone => 'الهاتف';
+
+  @override
+  String get address => 'العنوان';
+
+  @override
+  String get addNewStudent => 'إضافة طالب جديد';
+
+  @override
+  String get editStudent => 'تعديل بيانات الطالب';
+
+  @override
+  String get studentName => 'اسم الطالب';
+
+  @override
+  String get enterStudentName => 'أدخل اسم الطالب';
+
+  @override
+  String get nameRequired => 'الاسم مطلوب';
+
+  @override
+  String get enterFatherName => 'أدخل اسم الأب';
+
+  @override
+  String get fatherNameRequired => 'اسم الأب مطلوب';
+
+  @override
+  String get enterRollNumber => 'أدخل رقم القيد';
+
+  @override
+  String get rollNumberRequired => 'رقم القيد مطلوب';
+
+  @override
+  String get enterClassId => 'أدخل معرف الفصل';
+
+  @override
+  String get classIdRequired => 'معرف الفصل مطلوب';
+
+  @override
+  String get enterPhone => 'أدخل رقم الهاتف (اختياري)';
+
+  @override
+  String get enterAddress => 'أدخل العنوان (اختياري)';
+
+  @override
+  String get status => 'الحالة';
+
+  @override
+  String get saveStudent => 'حفظ الطالب';
+
+  @override
+  String get updateStudent => 'تحديث بيانات الطالب';
+
+  @override
+  String get studentAddedSuccess => 'تمت إضافة الطالب بنجاح';
+
+  @override
+  String get studentUpdatedSuccess => 'تم تحديث بيانات الطالب بنجاح';
+
+  @override
+  String get studentDeletedSuccess => 'تم حذف الطالب بنجاح';
+
+  @override
+  String get deleteStudentTitle => 'حذف الطالب';
+
+  @override
+  String deleteStudentConfirmation(String name) {
+    return 'هل أنت متأكد أنك تريد حذف $name؟ لا يمكن التراجع عن هذا الإجراء.';
+  }
+
+  @override
+  String get cancel => 'إلغاء';
+
+  @override
+  String get unassignedStudents => 'طلاب غير معينين';
+
+  @override
+  String unassignedStudentsSubtitle(int count) {
+    return '$count طلاب يحتاجون إلى فصل';
+  }
+
+  @override
+  String get noClassesFound => 'لم يتم العثور على فصول';
+
+  @override
+  String get selectClass => 'حدد الفصل';
+
+  @override
+  String get addClass => 'إضافة فصل';
+
+  @override
+  String get editClass => 'تعديل الفصل';
+
+  @override
+  String get deleteClass => 'حذف الفصل';
+
+  @override
+  String deleteClassConfirmation(String name) {
+    return 'هل أنت متأكد أنك تريد حذف $name؟ لا يمكن التراجع عن هذا الإجراء.';
+  }
+
+  @override
+  String get classNameEn => 'اسم الفصل (بالإنجليزية)';
+
+  @override
+  String get classNameUr => 'اسم الفصل (بالأردية)';
+
+  @override
+  String get classNameAr => 'اسم الفصل (بالعربية)';
+
+  @override
+  String get sortOrder => 'ترتيب العرض';
+
+  @override
+  String get enterSortOrder => 'أدخل ترتيب العرض';
+
+  @override
+  String cannotDeleteClassWithStudents(int count) {
+    return 'لا يمكن حذف هذا الفصل لأن هناك $count طالباً مسجلين فيه. يرجى نقل الطلاب أولاً.';
+  }
+
+  @override
+  String get classAddedSuccess => 'تمت إضافة الفصل بنجاح';
+
+  @override
+  String get classUpdatedSuccess => 'تم تحديث الفصل بنجاح';
+
+  @override
+  String get classDeletedSuccess => 'تم حذف الفصل بنجاح';
+
+  @override
+  String get fieldRequired => 'هذا الحقل مطلوب';
+
+  @override
+  String get invalidNumber => 'يرجى إدخال رقم صحيح';
+
+  @override
+  String get save => 'حفظ';
+
+  @override
+  String get classRequired => 'الفصل مطلوب';
+
+  @override
+  String get noClassesAvailableCreateFirst =>
+      'لا توجد فصول دراسية متاحة. يرجى إنشاء فصل أولاً.';
 }

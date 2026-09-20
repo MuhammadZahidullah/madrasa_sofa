@@ -77,5 +77,92 @@
   "manageFeeRecords": "Manage fee records",
   "homeNav": "Home",
   "notificationsNav": "Notifications",
-  "profileNav": "Profile"
+  "profileNav": "Profile",
+  "searchStudents": "Search by name, father name, roll...",
+  "noStudentsFound": "No students found",
+  "noStudentsYet": "No students added yet",
+  "errorLoadingStudents": "Failed to load students",
+  "retry": "Retry",
+  "rollNumber": "Roll Number",
+  "rollNumberPrefix": "Roll #",
+  "fatherName": "Father Name",
+  "classId": "Class ID",
+  "active": "Active",
+  "inactive": "Inactive",
+  "edit": "Edit",
+  "delete": "Delete",
+  "phone": "Phone",
+  "address": "Address",
+  "addNewStudent": "Add New Student",
+  "editStudent": "Edit Student",
+  "studentName": "Student Name",
+  "enterStudentName": "Enter student name",
+  "nameRequired": "Name is required",
+  "enterFatherName": "Enter father's name",
+  "fatherNameRequired": "Father's name is required",
+  "enterRollNumber": "Enter roll number",
+  "rollNumberRequired": "Roll number is required",
+  "enterClassId": "Enter class ID",
+  "classIdRequired": "Class ID is required",
+  "enterPhone": "Enter phone (optional)",
+  "enterAddress": "Enter address (optional)",
+  "status": "Status",
+  "saveStudent": "Save Student",
+  "updateStudent": "Update Student",
+  "studentAddedSuccess": "Student added successfully",
+  "studentUpdatedSuccess": "Student updated successfully",
+  "studentDeletedSuccess": "Student deleted successfully",
+  "deleteStudentTitle": "Delete Student",
+  "deleteStudentConfirmation": "Are you sure you want to delete {name}? This action cannot be undone.",
+  "@deleteStudentConfirmation": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Cancel",
+  "unassignedStudents": "Unassigned Students",
+  "unassignedStudentsSubtitle": "{count} students need a class",
+  "@unassignedStudentsSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "noClassesFound": "No classes found",
+  "selectClass": "Select Class",
+  "addClass": "Add Class",
+  "editClass": "Edit Class",
+  "deleteClass": "Delete Class",
+  "deleteClassConfirmation": "Are you sure you want to delete {name}? This action cannot be undone.",
+  "@deleteClassConfirmation": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "classNameEn": "Class Name (English)",
+  "classNameUr": "Class Name (Urdu)",
+  "classNameAr": "Class Name (Arabic)",
+  "sortOrder": "Sort Order",
+  "enterSortOrder": "Enter sort order",
+  "cannotDeleteClassWithStudents": "Cannot delete this class because {count} students are enrolled in it. Reassign or remove the students first.",
+  "@cannotDeleteClassWithStudents": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "classAddedSuccess": "Class added successfully",
+  "classUpdatedSuccess": "Class updated successfully",
+  "classDeletedSuccess": "Class deleted successfully",
+  "fieldRequired": "This field is required",
+  "invalidNumber": "Please enter a valid number",
+  "save": "Save",
+  "classRequired": "Class is required",
+  "noClassesAvailableCreateFirst": "No active classes available. Please create a class first."
 }

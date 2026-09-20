@@ -513,6 +513,360 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Profile'**
   String get profileNav;
+
+  /// No description provided for @searchStudents.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by name, father name, roll...'**
+  String get searchStudents;
+
+  /// No description provided for @noStudentsFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No students found'**
+  String get noStudentsFound;
+
+  /// No description provided for @noStudentsYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No students added yet'**
+  String get noStudentsYet;
+
+  /// No description provided for @errorLoadingStudents.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to load students'**
+  String get errorLoadingStudents;
+
+  /// No description provided for @retry.
+  ///
+  /// In en, this message translates to:
+  /// **'Retry'**
+  String get retry;
+
+  /// No description provided for @rollNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Roll Number'**
+  String get rollNumber;
+
+  /// No description provided for @rollNumberPrefix.
+  ///
+  /// In en, this message translates to:
+  /// **'Roll #'**
+  String get rollNumberPrefix;
+
+  /// No description provided for @fatherName.
+  ///
+  /// In en, this message translates to:
+  /// **'Father Name'**
+  String get fatherName;
+
+  /// No description provided for @classId.
+  ///
+  /// In en, this message translates to:
+  /// **'Class ID'**
+  String get classId;
+
+  /// No description provided for @active.
+  ///
+  /// In en, this message translates to:
+  /// **'Active'**
+  String get active;
+
+  /// No description provided for @inactive.
+  ///
+  /// In en, this message translates to:
+  /// **'Inactive'**
+  String get inactive;
+
+  /// No description provided for @edit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit'**
+  String get edit;
+
+  /// No description provided for @delete.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete'**
+  String get delete;
+
+  /// No description provided for @phone.
+  ///
+  /// In en, this message translates to:
+  /// **'Phone'**
+  String get phone;
+
+  /// No description provided for @address.
+  ///
+  /// In en, this message translates to:
+  /// **'Address'**
+  String get address;
+
+  /// No description provided for @addNewStudent.
+  ///
+  /// In en, this message translates to:
+  /// **'Add New Student'**
+  String get addNewStudent;
+
+  /// No description provided for @editStudent.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Student'**
+  String get editStudent;
+
+  /// No description provided for @studentName.
+  ///
+  /// In en, this message translates to:
+  /// **'Student Name'**
+  String get studentName;
+
+  /// No description provided for @enterStudentName.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter student name'**
+  String get enterStudentName;
+
+  /// No description provided for @nameRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Name is required'**
+  String get nameRequired;
+
+  /// No description provided for @enterFatherName.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter father\'s name'**
+  String get enterFatherName;
+
+  /// No description provided for @fatherNameRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Father\'s name is required'**
+  String get fatherNameRequired;
+
+  /// No description provided for @enterRollNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter roll number'**
+  String get enterRollNumber;
+
+  /// No description provided for @rollNumberRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Roll number is required'**
+  String get rollNumberRequired;
+
+  /// No description provided for @enterClassId.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter class ID'**
+  String get enterClassId;
+
+  /// No description provided for @classIdRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Class ID is required'**
+  String get classIdRequired;
+
+  /// No description provided for @enterPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter phone (optional)'**
+  String get enterPhone;
+
+  /// No description provided for @enterAddress.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter address (optional)'**
+  String get enterAddress;
+
+  /// No description provided for @status.
+  ///
+  /// In en, this message translates to:
+  /// **'Status'**
+  String get status;
+
+  /// No description provided for @saveStudent.
+  ///
+  /// In en, this message translates to:
+  /// **'Save Student'**
+  String get saveStudent;
+
+  /// No description provided for @updateStudent.
+  ///
+  /// In en, this message translates to:
+  /// **'Update Student'**
+  String get updateStudent;
+
+  /// No description provided for @studentAddedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Student added successfully'**
+  String get studentAddedSuccess;
+
+  /// No description provided for @studentUpdatedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Student updated successfully'**
+  String get studentUpdatedSuccess;
+
+  /// No description provided for @studentDeletedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Student deleted successfully'**
+  String get studentDeletedSuccess;
+
+  /// No description provided for @deleteStudentTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Student'**
+  String get deleteStudentTitle;
+
+  /// No description provided for @deleteStudentConfirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete {name}? This action cannot be undone.'**
+  String deleteStudentConfirmation(String name);
+
+  /// No description provided for @cancel.
+  ///
+  /// In en, this message translates to:
+  /// **'Cancel'**
+  String get cancel;
+
+  /// No description provided for @unassignedStudents.
+  ///
+  /// In en, this message translates to:
+  /// **'Unassigned Students'**
+  String get unassignedStudents;
+
+  /// No description provided for @unassignedStudentsSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'{count} students need a class'**
+  String unassignedStudentsSubtitle(int count);
+
+  /// No description provided for @noClassesFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No classes found'**
+  String get noClassesFound;
+
+  /// No description provided for @selectClass.
+  ///
+  /// In en, this message translates to:
+  /// **'Select Class'**
+  String get selectClass;
+
+  /// No description provided for @addClass.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Class'**
+  String get addClass;
+
+  /// No description provided for @editClass.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Class'**
+  String get editClass;
+
+  /// No description provided for @deleteClass.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Class'**
+  String get deleteClass;
+
+  /// No description provided for @deleteClassConfirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete {name}? This action cannot be undone.'**
+  String deleteClassConfirmation(String name);
+
+  /// No description provided for @classNameEn.
+  ///
+  /// In en, this message translates to:
+  /// **'Class Name (English)'**
+  String get classNameEn;
+
+  /// No description provided for @classNameUr.
+  ///
+  /// In en, this message translates to:
+  /// **'Class Name (Urdu)'**
+  String get classNameUr;
+
+  /// No description provided for @classNameAr.
+  ///
+  /// In en, this message translates to:
+  /// **'Class Name (Arabic)'**
+  String get classNameAr;
+
+  /// No description provided for @sortOrder.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort Order'**
+  String get sortOrder;
+
+  /// No description provided for @enterSortOrder.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter sort order'**
+  String get enterSortOrder;
+
+  /// No description provided for @cannotDeleteClassWithStudents.
+  ///
+  /// In en, this message translates to:
+  /// **'Cannot delete this class because {count} students are enrolled in it. Reassign or remove the students first.'**
+  String cannotDeleteClassWithStudents(int count);
+
+  /// No description provided for @classAddedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Class added successfully'**
+  String get classAddedSuccess;
+
+  /// No description provided for @classUpdatedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Class updated successfully'**
+  String get classUpdatedSuccess;
+
+  /// No description provided for @classDeletedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Class deleted successfully'**
+  String get classDeletedSuccess;
+
+  /// No description provided for @fieldRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'This field is required'**
+  String get fieldRequired;
+
+  /// No description provided for @invalidNumber.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter a valid number'**
+  String get invalidNumber;
+
+  /// No description provided for @save.
+  ///
+  /// In en, this message translates to:
+  /// **'Save'**
+  String get save;
+
+  /// No description provided for @classRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Class is required'**
+  String get classRequired;
+
+  /// No description provided for @noClassesAvailableCreateFirst.
+  ///
+  /// In en, this message translates to:
+  /// **'No active classes available. Please create a class first.'**
+  String get noClassesAvailableCreateFirst;
 }
 
 class _AppLocalizationsDelegate

@@ -50,7 +50,8 @@ class QuickActionCard extends StatelessWidget {
                         Expanded(
                           child: Text(
                             title,
-                            style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                            style: Theme.of(context).textTheme.titleSmall
+                                ?.copyWith(
                                   fontWeight: FontWeight.bold,
                                   color: accentColor,
                                   fontSize: 13,
@@ -70,9 +71,9 @@ class QuickActionCard extends StatelessWidget {
                     Text(
                       subtitle,
                       style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                            color: accentColor.withValues(alpha: 0.8),
-                            fontSize: 10.5,
-                          ),
+                        color: accentColor.withValues(alpha: 0.8),
+                        fontSize: 10.5,
+                      ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),

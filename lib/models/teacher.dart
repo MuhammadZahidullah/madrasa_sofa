@@ -5,16 +5,10 @@ class Teacher {
   Teacher({this.id, required this.name});
 
   Map<String, dynamic> toMap() {
-    return {
-      'id': id,
-      'name': name,
-    };
+    return {'id': id, 'name': name};
   }
 
   factory Teacher.fromMap(Map<String, dynamic> map) {
-    return Teacher(
-      id: map['id'],
-      name: map['name'],
-    );
+    return Teacher(id: map['id'], name: map['name']);
   }
 }

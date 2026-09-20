@@ -218,4 +218,190 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get profileNav => 'Profile';
+
+  @override
+  String get searchStudents => 'Search by name, father name, roll...';
+
+  @override
+  String get noStudentsFound => 'No students found';
+
+  @override
+  String get noStudentsYet => 'No students added yet';
+
+  @override
+  String get errorLoadingStudents => 'Failed to load students';
+
+  @override
+  String get retry => 'Retry';
+
+  @override
+  String get rollNumber => 'Roll Number';
+
+  @override
+  String get rollNumberPrefix => 'Roll #';
+
+  @override
+  String get fatherName => 'Father Name';
+
+  @override
+  String get classId => 'Class ID';
+
+  @override
+  String get active => 'Active';
+
+  @override
+  String get inactive => 'Inactive';
+
+  @override
+  String get edit => 'Edit';
+
+  @override
+  String get delete => 'Delete';
+
+  @override
+  String get phone => 'Phone';
+
+  @override
+  String get address => 'Address';
+
+  @override
+  String get addNewStudent => 'Add New Student';
+
+  @override
+  String get editStudent => 'Edit Student';
+
+  @override
+  String get studentName => 'Student Name';
+
+  @override
+  String get enterStudentName => 'Enter student name';
+
+  @override
+  String get nameRequired => 'Name is required';
+
+  @override
+  String get enterFatherName => 'Enter father\'s name';
+
+  @override
+  String get fatherNameRequired => 'Father\'s name is required';
+
+  @override
+  String get enterRollNumber => 'Enter roll number';
+
+  @override
+  String get rollNumberRequired => 'Roll number is required';
+
+  @override
+  String get enterClassId => 'Enter class ID';
+
+  @override
+  String get classIdRequired => 'Class ID is required';
+
+  @override
+  String get enterPhone => 'Enter phone (optional)';
+
+  @override
+  String get enterAddress => 'Enter address (optional)';
+
+  @override
+  String get status => 'Status';
+
+  @override
+  String get saveStudent => 'Save Student';
+
+  @override
+  String get updateStudent => 'Update Student';
+
+  @override
+  String get studentAddedSuccess => 'Student added successfully';
+
+  @override
+  String get studentUpdatedSuccess => 'Student updated successfully';
+
+  @override
+  String get studentDeletedSuccess => 'Student deleted successfully';
+
+  @override
+  String get deleteStudentTitle => 'Delete Student';
+
+  @override
+  String deleteStudentConfirmation(String name) {
+    return 'Are you sure you want to delete $name? This action cannot be undone.';
+  }
+
+  @override
+  String get cancel => 'Cancel';
+
+  @override
+  String get unassignedStudents => 'Unassigned Students';
+
+  @override
+  String unassignedStudentsSubtitle(int count) {
+    return '$count students need a class';
+  }
+
+  @override
+  String get noClassesFound => 'No classes found';
+
+  @override
+  String get selectClass => 'Select Class';
+
+  @override
+  String get addClass => 'Add Class';
+
+  @override
+  String get editClass => 'Edit Class';
+
+  @override
+  String get deleteClass => 'Delete Class';
+
+  @override
+  String deleteClassConfirmation(String name) {
+    return 'Are you sure you want to delete $name? This action cannot be undone.';
+  }
+
+  @override
+  String get classNameEn => 'Class Name (English)';
+
+  @override
+  String get classNameUr => 'Class Name (Urdu)';
+
+  @override
+  String get classNameAr => 'Class Name (Arabic)';
+
+  @override
+  String get sortOrder => 'Sort Order';
+
+  @override
+  String get enterSortOrder => 'Enter sort order';
+
+  @override
+  String cannotDeleteClassWithStudents(int count) {
+    return 'Cannot delete this class because $count students are enrolled in it. Reassign or remove the students first.';
+  }
+
+  @override
+  String get classAddedSuccess => 'Class added successfully';
+
+  @override
+  String get classUpdatedSuccess => 'Class updated successfully';
+
+  @override
+  String get classDeletedSuccess => 'Class deleted successfully';
+
+  @override
+  String get fieldRequired => 'This field is required';
+
+  @override
+  String get invalidNumber => 'Please enter a valid number';
+
+  @override
+  String get save => 'Save';
+
+  @override
+  String get classRequired => 'Class is required';
+
+  @override
+  String get noClassesAvailableCreateFirst =>
+      'No active classes available. Please create a class first.';
 }

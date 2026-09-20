@@ -42,9 +42,17 @@ class StudentDashboard extends StatelessWidget {
                 mainAxisSpacing: 16,
                 crossAxisSpacing: 16,
                 children: [
-                  _buildDashboardCard(context, l10n.myAttendance, Icons.calendar_today),
+                  _buildDashboardCard(
+                    context,
+                    l10n.myAttendance,
+                    Icons.calendar_today,
+                  ),
                   _buildDashboardCard(context, l10n.myResults, Icons.grade),
-                  _buildDashboardCard(context, l10n.myProgress, Icons.trending_up),
+                  _buildDashboardCard(
+                    context,
+                    l10n.myProgress,
+                    Icons.trending_up,
+                  ),
                   _buildDashboardCard(context, l10n.myHistory, Icons.history),
                 ],
               ),
@@ -67,10 +75,7 @@ class StudentDashboard extends StatelessWidget {
           value: Locale('en'),
           child: Text('English'),
         ),
-        const PopupMenuItem<Locale>(
-          value: Locale('ur'),
-          child: Text('اردو'),
-        ),
+        const PopupMenuItem<Locale>(value: Locale('ur'), child: Text('اردو')),
         const PopupMenuItem<Locale>(
           value: Locale('ar'),
           child: Text('العربية'),
@@ -79,15 +84,19 @@ class StudentDashboard extends StatelessWidget {
     );
   }
 
-  Widget _buildDashboardCard(BuildContext context, String title, IconData icon) {
+  Widget _buildDashboardCard(
+    BuildContext context,
+    String title,
+    IconData icon,
+  ) {
     final l10n = AppLocalizations.of(context)!;
     return Card(
       elevation: 2,
       child: InkWell(
         onTap: () {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text(l10n.comingSoon)),
-          );
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(SnackBar(content: Text(l10n.comingSoon)));
         },
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static const Color primaryColor = Color(0xFF1F9F68); // A nice green from the mockup
-  static const Color secondaryAccent = Color(0xFF6B4EE6); // Purple from the mockup
+  static const Color primaryColor = Color(
+    0xFF1F9F68,
+  ); // A nice green from the mockup
+  static const Color secondaryAccent = Color(
+    0xFF6B4EE6,
+  ); // Purple from the mockup
 
   static final ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,

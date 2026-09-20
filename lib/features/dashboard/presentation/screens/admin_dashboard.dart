@@ -7,6 +7,9 @@ import 'package:madrasa_soffa/features/dashboard/presentation/widgets/admin_stat
 import 'package:madrasa_soffa/features/dashboard/presentation/widgets/quick_action_card.dart';
 import 'package:madrasa_soffa/features/dashboard/presentation/widgets/management_tile.dart';
 import 'package:madrasa_soffa/core/theme/app_theme.dart';
+import 'package:madrasa_soffa/features/classes/presentation/screens/classes_screen.dart';
+import 'package:madrasa_soffa/features/students/presentation/screens/students_screen.dart';
+import 'package:madrasa_soffa/features/students/presentation/screens/add_edit_student_screen.dart';
 
 class AdminDashboard extends StatefulWidget {
   const AdminDashboard({super.key});
@@ -56,18 +59,18 @@ class _AdminDashboardState extends State<AdminDashboard> {
               Text(
                 l10n.assalamuAlaikum(userName),
                 style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               const SizedBox(height: 4),
               Text(
                 l10n.overviewSubtitle,
                 style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: isDark ? Colors.grey[400] : Colors.grey[600],
-                    ),
+                  color: isDark ? Colors.grey[400] : Colors.grey[600],
+                ),
               ),
               const SizedBox(height: 24),
-              
+
               GridView.count(
                 crossAxisCount: 2,
                 shrinkWrap: true,
@@ -106,9 +109,14 @@ class _AdminDashboardState extends State<AdminDashboard> {
                   ),
                 ],
               ),
-              
+
               const SizedBox(height: 32),
-              _buildSectionHeader(context, l10n.quickActions, true, l10n.viewAll),
+              _buildSectionHeader(
+                context,
+                l10n.quickActions,
+                true,
+                l10n.viewAll,
+              ),
               const SizedBox(height: 12),
               Row(
                 children: [
@@ -118,7 +126,12 @@ class _AdminDashboardState extends State<AdminDashboard> {
                       subtitle: l10n.registerNewStudent,
                       icon: Icons.add,
                       accentColor: AppTheme.primaryColor,
-                      onTap: () => _showComingSoon(context),
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const AddEditStudentScreen(),
+                        ),
+                      ),
                     ),
                   ),
                   const SizedBox(width: 12),
@@ -133,7 +146,7 @@ class _AdminDashboardState extends State<AdminDashboard> {
                   ),
                 ],
               ),
-              
+
               const SizedBox(height: 32),
               _buildSectionHeader(context, l10n.management, false, ''),
               const SizedBox(height: 12),
@@ -142,7 +155,10 @@ class _AdminDashboardState extends State<AdminDashboard> {
                 subtitle: l10n.viewManageStudents,
                 icon: Icons.people,
                 iconColor: AppTheme.primaryColor,
-                onTap: () => _showComingSoon(context),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const StudentsScreen()),
+                ),
               ),
               ManagementTile(
                 title: l10n.teachers,
@@ -156,7 +172,10 @@ class _AdminDashboardState extends State<AdminDashboard> {
                 subtitle: l10n.manageClassesSections,
                 icon: Icons.class_,
                 iconColor: Colors.orange,
-                onTap: () => _showComingSoon(context),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const ClassesScreen()),
+                ),
               ),
               ManagementTile(
                 title: l10n.attendance,
@@ -219,15 +238,20 @@ class _AdminDashboardState extends State<AdminDashboard> {
     );
   }
 
-  Widget _buildSectionHeader(BuildContext context, String title, bool showViewAll, String viewAllText) {
+  Widget _buildSectionHeader(
+    BuildContext context,
+    String title,
+    bool showViewAll,
+    String viewAllText,
+  ) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           title,
-          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                fontWeight: FontWeight.bold,
-              ),
+          style: Theme.of(
+            context,
+          ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold),
         ),
         if (showViewAll)
           InkWell(
@@ -241,7 +265,11 @@ class _AdminDashboardState extends State<AdminDashboard> {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                Icon(Icons.chevron_right, color: Theme.of(context).primaryColor, size: 20),
+                Icon(
+                  Icons.chevron_right,
+                  color: Theme.of(context).primaryColor,
+                  size: 20,
+                ),
               ],
             ),
           ),
@@ -275,17 +303,23 @@ class _AdminDashboardState extends State<AdminDashboard> {
         localeProvider.setLocale(locale);
       },
       itemBuilder: (BuildContext context) => <PopupMenuEntry<Locale>>[
-        const PopupMenuItem<Locale>(value: Locale('en'), child: Text('English')),
+        const PopupMenuItem<Locale>(
+          value: Locale('en'),
+          child: Text('English'),
+        ),
         const PopupMenuItem<Locale>(value: Locale('ur'), child: Text('اردو')),
-        const PopupMenuItem<Locale>(value: Locale('ar'), child: Text('العربية')),
+        const PopupMenuItem<Locale>(
+          value: Locale('ar'),
+          child: Text('العربية'),
+        ),
       ],
     );
   }
 
   void _showComingSoon(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text(l10n.comingSoon)),
-    );
+    ScaffoldMessenger.of(
+      context,
+    ).showSnackBar(SnackBar(content: Text(l10n.comingSoon)));
   }
 }

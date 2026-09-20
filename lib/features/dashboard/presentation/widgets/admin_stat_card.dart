@@ -43,8 +43,8 @@ class AdminStatCard extends StatelessWidget {
                   child: Text(
                     value,
                     style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                          fontWeight: FontWeight.bold,
-                        ),
+                      fontWeight: FontWeight.bold,
+                    ),
                     overflow: TextOverflow.ellipsis,
                   ),
                 ),
@@ -57,8 +57,8 @@ class AdminStatCard extends StatelessWidget {
                 Text(
                   title,
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                        fontWeight: FontWeight.w600,
-                      ),
+                    fontWeight: FontWeight.w600,
+                  ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -66,8 +66,12 @@ class AdminStatCard extends StatelessWidget {
                 Text(
                   subtitle,
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                        color: Theme.of(context).textTheme.bodySmall?.color?.withValues(alpha: 0.7) ?? Colors.grey[600],
-                      ),
+                    color:
+                        Theme.of(
+                          context,
+                        ).textTheme.bodySmall?.color?.withValues(alpha: 0.7) ??
+                        Colors.grey[600],
+                  ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),

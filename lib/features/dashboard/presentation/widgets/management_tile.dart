@@ -30,7 +30,10 @@ class ManagementTile extends StatelessWidget {
         ),
       ),
       child: ListTile(
-        contentPadding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16.0,
+          vertical: 4.0,
+        ),
         leading: Container(
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
@@ -46,8 +49,10 @@ class ManagementTile extends StatelessWidget {
         subtitle: Text(
           subtitle,
           style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                color: Theme.of(context).textTheme.bodySmall?.color?.withValues(alpha: 0.7),
-              ),
+            color: Theme.of(
+              context,
+            ).textTheme.bodySmall?.color?.withValues(alpha: 0.7),
+          ),
         ),
         trailing: const Icon(Icons.chevron_right, color: Colors.grey, size: 20),
         onTap: onTap,
