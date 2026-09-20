@@ -404,4 +404,152 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get noClassesAvailableCreateFirst =>
       'کوئی فعال کلاس دستیاب نہیں ہے۔ براہ کرم پہلے کلاس بنائیں۔';
+
+  @override
+  String get searchTeachers => 'نام، والد کا نام، فون، قابلیت سے تلاش کریں...';
+
+  @override
+  String get noTeachersFound => 'کوئی استاد نہیں ملا';
+
+  @override
+  String get noTeachersYet => 'ابھی تک کوئی استاد شامل نہیں کیا گیا';
+
+  @override
+  String get errorLoadingTeachers => 'اساتذہ لوڈ کرنے میں ناکامی';
+
+  @override
+  String get teacherName => 'استاد کا نام';
+
+  @override
+  String get enterTeacherName => 'استاد کا نام درج کریں';
+
+  @override
+  String get addNewTeacher => 'نیا استاد شامل کریں';
+
+  @override
+  String get editTeacher => 'استاد کی معلومات میں ترمیم کریں';
+
+  @override
+  String get saveTeacher => 'استاد کو محفوظ کریں';
+
+  @override
+  String get updateTeacher => 'استاد کی معلومات اپ ڈیٹ کریں';
+
+  @override
+  String get teacherAddedSuccess => 'استاد کامیابی سے شامل کر دیا گیا';
+
+  @override
+  String get teacherUpdatedSuccess =>
+      'استاد کی معلومات کامیابی سے اپ ڈیٹ ہو گئیں';
+
+  @override
+  String get teacherDeletedSuccess => 'استاد کامیابی سے حذف کر دیا گیا';
+
+  @override
+  String get deleteTeacherTitle => 'استاد کو حذف کریں';
+
+  @override
+  String deleteTeacherConfirmation(String name) {
+    return 'کیا آپ واقعی $name کو حذف کرنا چاہتے ہیں؟ اس عمل کو واپس نہیں لایا جا سکتا۔';
+  }
+
+  @override
+  String get qualification => 'قابلیت / اسناد';
+
+  @override
+  String get enterQualification => 'قابلیت درج کریں (اختیاری)';
+
+  @override
+  String get assignedClasses => 'تفویض کردہ کلاسز';
+
+  @override
+  String get noClassesAssigned => 'کوئی کلاس تفویض نہیں';
+
+  @override
+  String get selectAssignedClasses => 'اس استاد کے زیر تدریس کلاسز منتخب کریں';
+
+  @override
+  String get subjects => 'مضامین';
+
+  @override
+  String get viewManageSubjects => 'مضامین دیکھیں اور انتظام کریں';
+
+  @override
+  String get addSubject => 'نیا مضمون شامل کریں';
+
+  @override
+  String get editSubject => 'مضمون میں ترمیم کریں';
+
+  @override
+  String get deleteSubject => 'مضمون حذف کریں';
+
+  @override
+  String get deleteSubjectTitle => 'مضمون حذف کریں';
+
+  @override
+  String deleteSubjectConfirmation(String name) {
+    return 'کیا آپ واقعی $name کو حذف کرنا چاہتے ہیں؟ اس عمل کو واپس نہیں لایا جا سکتا۔';
+  }
+
+  @override
+  String get subjectNameEn => 'مضمون کا نام (انگریزی)';
+
+  @override
+  String get subjectNameUr => 'مضمون کا نام (اردو)';
+
+  @override
+  String get subjectNameAr => 'مضمون کا نام (عربی)';
+
+  @override
+  String get enterSubjectNameEn => 'انگریزی میں مضمون کا نام درج کریں';
+
+  @override
+  String get enterSubjectNameUr => 'اردو میں مضمون کا نام درج کریں';
+
+  @override
+  String get enterSubjectNameAr => 'عربی میں مضمون کا نام درج کریں';
+
+  @override
+  String get subjectAddedSuccess => 'مضمون کامیابی سے شامل کر دیا گیا';
+
+  @override
+  String get subjectUpdatedSuccess =>
+      'مضمون کی معلومات کامیابی سے اپ ڈیٹ ہو گئیں';
+
+  @override
+  String get subjectDeletedSuccess => 'مضمون کامیابی سے حذف کر دیا گیا';
+
+  @override
+  String get searchSubjects => 'مضامین تلاش کریں...';
+
+  @override
+  String get noSubjectsFound => 'کوئی مضمون نہیں ملا';
+
+  @override
+  String get noSubjectsYet => 'ابھی تک کوئی مضمون شامل نہیں کیا گیا';
+
+  @override
+  String get errorLoadingSubjects => 'مضامین لوڈ کرنے میں ناکامی';
+
+  @override
+  String get activeStatus => 'فعال حیثیت';
+
+  @override
+  String get teachingAssignments => 'تدریسی ذمہ داریاں';
+
+  @override
+  String get addAssignment => 'ذمہ داری شامل کریں';
+
+  @override
+  String get removeAssignment => 'ذمہ داری ہٹائیں';
+
+  @override
+  String get duplicateAssignmentError =>
+      'یہ ذمہ داری پہلے سے موجود ہے۔ براہ کرم تبدیل کریں۔';
+
+  @override
+  String get noAssignmentsAdded => 'کوئی تدریسی ذمہ داری شامل نہیں کی گئی۔';
+
+  @override
+  String get assignment => 'ذمہ داری';
 }

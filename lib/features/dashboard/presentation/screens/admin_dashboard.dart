@@ -10,6 +10,9 @@ import 'package:madrasa_soffa/core/theme/app_theme.dart';
 import 'package:madrasa_soffa/features/classes/presentation/screens/classes_screen.dart';
 import 'package:madrasa_soffa/features/students/presentation/screens/students_screen.dart';
 import 'package:madrasa_soffa/features/students/presentation/screens/add_edit_student_screen.dart';
+import 'package:madrasa_soffa/features/teachers/presentation/screens/teachers_screen.dart';
+import 'package:madrasa_soffa/features/teachers/presentation/screens/add_edit_teacher_screen.dart';
+import 'package:madrasa_soffa/features/subjects/presentation/screens/subjects_screen.dart';
 
 class AdminDashboard extends StatefulWidget {
   const AdminDashboard({super.key});
@@ -141,7 +144,12 @@ class _AdminDashboardState extends State<AdminDashboard> {
                       subtitle: l10n.registerNewTeacher,
                       icon: Icons.add,
                       accentColor: AppTheme.secondaryAccent,
-                      onTap: () => _showComingSoon(context),
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const AddEditTeacherScreen(),
+                        ),
+                      ),
                     ),
                   ),
                 ],
@@ -165,7 +173,10 @@ class _AdminDashboardState extends State<AdminDashboard> {
                 subtitle: l10n.viewManageTeachers,
                 icon: Icons.school,
                 iconColor: AppTheme.secondaryAccent,
-                onTap: () => _showComingSoon(context),
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const TeachersScreen()),
+                ),
               ),
               ManagementTile(
                 title: l10n.classes,
@@ -175,6 +186,16 @@ class _AdminDashboardState extends State<AdminDashboard> {
                 onTap: () => Navigator.push(
                   context,
                   MaterialPageRoute(builder: (_) => const ClassesScreen()),
+                ),
+              ),
+              ManagementTile(
+                title: l10n.subjects,
+                subtitle: l10n.viewManageSubjects,
+                icon: Icons.menu_book,
+                iconColor: Colors.indigo,
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const SubjectsScreen()),
                 ),
               ),
               ManagementTile(

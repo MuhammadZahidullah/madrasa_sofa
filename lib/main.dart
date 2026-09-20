@@ -8,7 +8,7 @@ import 'package:madrasa_soffa/providers/class_provider.dart';
 import 'package:madrasa_soffa/providers/fee_provider.dart';
 import 'package:madrasa_soffa/providers/lesson_provider.dart';
 import 'package:madrasa_soffa/providers/student_provider.dart' as legacy;
-import 'package:madrasa_soffa/providers/teacher_provider.dart';
+import 'package:madrasa_soffa/providers/teacher_provider.dart' as legacy_teacher;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:madrasa_soffa/features/auth/data/datasources/auth_remote_data_source.dart';
 import 'package:madrasa_soffa/features/auth/data/repositories/auth_repository_impl.dart';
@@ -33,6 +33,25 @@ import 'package:madrasa_soffa/features/classes/domain/usecases/update_class.dart
 import 'package:madrasa_soffa/features/classes/domain/usecases/delete_class.dart';
 import 'package:madrasa_soffa/features/classes/domain/usecases/check_class_has_students.dart';
 import 'package:madrasa_soffa/features/classes/presentation/providers/madrasa_class_provider.dart';
+import 'package:madrasa_soffa/features/teachers/data/datasources/teacher_remote_data_source.dart';
+import 'package:madrasa_soffa/features/teachers/data/repositories/teacher_repository_impl.dart';
+import 'package:madrasa_soffa/features/teachers/domain/usecases/get_teachers.dart';
+import 'package:madrasa_soffa/features/teachers/domain/usecases/add_teacher.dart';
+import 'package:madrasa_soffa/features/teachers/domain/usecases/update_teacher.dart';
+import 'package:madrasa_soffa/features/teachers/domain/usecases/delete_teacher.dart';
+import 'package:madrasa_soffa/features/teachers/presentation/providers/teacher_provider.dart';
+import 'package:madrasa_soffa/features/subjects/data/datasources/subject_remote_data_source.dart';
+import 'package:madrasa_soffa/features/subjects/data/repositories/subject_repository_impl.dart';
+import 'package:madrasa_soffa/features/subjects/domain/usecases/get_subjects.dart';
+import 'package:madrasa_soffa/features/subjects/domain/usecases/add_subject.dart';
+import 'package:madrasa_soffa/features/subjects/domain/usecases/update_subject.dart';
+import 'package:madrasa_soffa/features/subjects/domain/usecases/delete_subject.dart';
+import 'package:madrasa_soffa/features/subjects/presentation/providers/subject_provider.dart';
+import 'package:madrasa_soffa/features/teaching_assignments/data/datasources/teaching_assignment_remote_data_source.dart';
+import 'package:madrasa_soffa/features/teaching_assignments/data/repositories/teaching_assignment_repository_impl.dart';
+import 'package:madrasa_soffa/features/teaching_assignments/domain/usecases/get_assignments_by_teacher.dart';
+import 'package:madrasa_soffa/features/teaching_assignments/domain/usecases/save_teacher_assignments.dart';
+import 'package:madrasa_soffa/features/teaching_assignments/presentation/providers/teaching_assignment_provider.dart';
 import 'package:madrasa_soffa/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
@@ -56,7 +75,7 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(create: (_) => ClassProvider()..loadClasses()),
         ChangeNotifierProvider(
-          create: (_) => TeacherProvider()..loadTeachers(),
+          create: (_) => legacy_teacher.TeacherProvider()..loadTeachers(),
         ),
         ChangeNotifierProvider(
           create: (_) => AttendanceProvider()..loadAttendance(),
@@ -107,6 +126,60 @@ class MyApp extends StatelessWidget {
               deleteClassUseCase: DeleteClass(repository),
               checkClassHasStudentsUseCase: CheckClassHasStudents(repository),
             )..fetchClasses();
+          },
+        ),
+        ChangeNotifierProvider(
+          create: (_) {
+            final remoteDataSource = TeacherRemoteDataSourceImpl(
+              firestore: FirebaseFirestore.instance,
+            );
+            final teacherRepository = TeacherRepositoryImpl(
+              remoteDataSource: remoteDataSource,
+            );
+            
+            final assignmentRemoteDataSource = TeachingAssignmentRemoteDataSourceImpl(
+              firestore: FirebaseFirestore.instance,
+            );
+            final assignmentRepository = TeachingAssignmentRepositoryImpl(
+              remoteDataSource: assignmentRemoteDataSource,
+            );
+            
+            return TeacherProvider(
+              getTeachers: GetTeachers(teacherRepository),
+              addTeacher: AddTeacher(teacherRepository),
+              updateTeacher: UpdateTeacher(teacherRepository),
+              deleteTeacher: DeleteTeacher(teacherRepository, assignmentRepository),
+            );
+          },
+        ),
+        ChangeNotifierProvider(
+          create: (_) {
+            final remoteDataSource = SubjectRemoteDataSourceImpl(
+              firestore: FirebaseFirestore.instance,
+            );
+            final subjectRepository = SubjectRepositoryImpl(
+              remoteDataSource: remoteDataSource,
+            );
+            return SubjectProvider(
+              getSubjects: GetSubjects(subjectRepository),
+              addSubject: AddSubject(subjectRepository),
+              updateSubject: UpdateSubject(subjectRepository),
+              deleteSubject: DeleteSubject(subjectRepository),
+            );
+          },
+        ),
+        ChangeNotifierProvider(
+          create: (_) {
+            final remoteDataSource = TeachingAssignmentRemoteDataSourceImpl(
+              firestore: FirebaseFirestore.instance,
+            );
+            final repository = TeachingAssignmentRepositoryImpl(
+              remoteDataSource: remoteDataSource,
+            );
+            return TeachingAssignmentProvider(
+              getAssignmentsByTeacher: GetAssignmentsByTeacher(repository),
+              saveTeacherAssignments: SaveTeacherAssignments(repository),
+            );
           },
         ),
       ],

@@ -164,5 +164,68 @@
   "invalidNumber": "Please enter a valid number",
   "save": "Save",
   "classRequired": "Class is required",
-  "noClassesAvailableCreateFirst": "No active classes available. Please create a class first."
+  "noClassesAvailableCreateFirst": "No active classes available. Please create a class first.",
+  "searchTeachers": "Search by name, father name, phone...",
+  "noTeachersFound": "No teachers found",
+  "noTeachersYet": "No teachers added yet",
+  "errorLoadingTeachers": "Failed to load teachers",
+  "teacherName": "Teacher Name",
+  "enterTeacherName": "Enter teacher name",
+  "addNewTeacher": "Add New Teacher",
+  "editTeacher": "Edit Teacher",
+  "saveTeacher": "Save Teacher",
+  "updateTeacher": "Update Teacher",
+  "teacherAddedSuccess": "Teacher added successfully",
+  "teacherUpdatedSuccess": "Teacher updated successfully",
+  "teacherDeletedSuccess": "Teacher deleted successfully",
+  "deleteTeacherTitle": "Delete Teacher",
+  "deleteTeacherConfirmation": "Are you sure you want to delete {name}? This action cannot be undone.",
+  "@deleteTeacherConfirmation": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "qualification": "Qualification",
+  "enterQualification": "Enter qualification (optional)",
+  "assignedClasses": "Assigned Classes",
+  "noClassesAssigned": "No classes assigned",
+  "selectAssignedClasses": "Select classes taught by this teacher",
+  "subjects": "Subjects",
+  "viewManageSubjects": "View and manage subjects",
+  "addSubject": "Add Subject",
+  "editSubject": "Edit Subject",
+  "deleteSubject": "Delete Subject",
+  "deleteSubjectTitle": "Delete Subject",
+  "deleteSubjectConfirmation": "Are you sure you want to delete {name}? This action cannot be undone.",
+  "@deleteSubjectConfirmation": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "subjectNameEn": "Subject Name (English)",
+  "subjectNameUr": "Subject Name (Urdu)",
+  "subjectNameAr": "Subject Name (Arabic)",
+  "enterSubjectNameEn": "Enter subject name in English",
+  "enterSubjectNameUr": "Enter subject name in Urdu",
+  "enterSubjectNameAr": "Enter subject name in Arabic",
+  "subjectAddedSuccess": "Subject added successfully",
+  "subjectUpdatedSuccess": "Subject updated successfully",
+  "subjectDeletedSuccess": "Subject deleted successfully",
+  "searchSubjects": "Search subjects...",
+  "noSubjectsFound": "No subjects found",
+  "noSubjectsYet": "No subjects added yet",
+  "errorLoadingSubjects": "Failed to load subjects",
+  "active": "Active",
+  "inactive": "Inactive",
+  "activeStatus": "Active Status",
+  "teachingAssignments": "Teaching Assignments",
+  "addAssignment": "Add Assignment",
+  "removeAssignment": "Remove Assignment",
+  "duplicateAssignmentError": "Duplicate assignment found. Please remove or change.",
+  "noAssignmentsAdded": "No teaching assignments added.",
+  "assignment": "Assignment"
 }

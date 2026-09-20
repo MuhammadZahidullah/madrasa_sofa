@@ -867,6 +867,288 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No active classes available. Please create a class first.'**
   String get noClassesAvailableCreateFirst;
+
+  /// No description provided for @searchTeachers.
+  ///
+  /// In en, this message translates to:
+  /// **'Search by name, father name, phone...'**
+  String get searchTeachers;
+
+  /// No description provided for @noTeachersFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No teachers found'**
+  String get noTeachersFound;
+
+  /// No description provided for @noTeachersYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No teachers added yet'**
+  String get noTeachersYet;
+
+  /// No description provided for @errorLoadingTeachers.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to load teachers'**
+  String get errorLoadingTeachers;
+
+  /// No description provided for @teacherName.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher Name'**
+  String get teacherName;
+
+  /// No description provided for @enterTeacherName.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter teacher name'**
+  String get enterTeacherName;
+
+  /// No description provided for @addNewTeacher.
+  ///
+  /// In en, this message translates to:
+  /// **'Add New Teacher'**
+  String get addNewTeacher;
+
+  /// No description provided for @editTeacher.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Teacher'**
+  String get editTeacher;
+
+  /// No description provided for @saveTeacher.
+  ///
+  /// In en, this message translates to:
+  /// **'Save Teacher'**
+  String get saveTeacher;
+
+  /// No description provided for @updateTeacher.
+  ///
+  /// In en, this message translates to:
+  /// **'Update Teacher'**
+  String get updateTeacher;
+
+  /// No description provided for @teacherAddedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher added successfully'**
+  String get teacherAddedSuccess;
+
+  /// No description provided for @teacherUpdatedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher updated successfully'**
+  String get teacherUpdatedSuccess;
+
+  /// No description provided for @teacherDeletedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher deleted successfully'**
+  String get teacherDeletedSuccess;
+
+  /// No description provided for @deleteTeacherTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Teacher'**
+  String get deleteTeacherTitle;
+
+  /// No description provided for @deleteTeacherConfirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete {name}? This action cannot be undone.'**
+  String deleteTeacherConfirmation(String name);
+
+  /// No description provided for @qualification.
+  ///
+  /// In en, this message translates to:
+  /// **'Qualification'**
+  String get qualification;
+
+  /// No description provided for @enterQualification.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter qualification (optional)'**
+  String get enterQualification;
+
+  /// No description provided for @assignedClasses.
+  ///
+  /// In en, this message translates to:
+  /// **'Assigned Classes'**
+  String get assignedClasses;
+
+  /// No description provided for @noClassesAssigned.
+  ///
+  /// In en, this message translates to:
+  /// **'No classes assigned'**
+  String get noClassesAssigned;
+
+  /// No description provided for @selectAssignedClasses.
+  ///
+  /// In en, this message translates to:
+  /// **'Select classes taught by this teacher'**
+  String get selectAssignedClasses;
+
+  /// No description provided for @subjects.
+  ///
+  /// In en, this message translates to:
+  /// **'Subjects'**
+  String get subjects;
+
+  /// No description provided for @viewManageSubjects.
+  ///
+  /// In en, this message translates to:
+  /// **'View and manage subjects'**
+  String get viewManageSubjects;
+
+  /// No description provided for @addSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Subject'**
+  String get addSubject;
+
+  /// No description provided for @editSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit Subject'**
+  String get editSubject;
+
+  /// No description provided for @deleteSubject.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Subject'**
+  String get deleteSubject;
+
+  /// No description provided for @deleteSubjectTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Delete Subject'**
+  String get deleteSubjectTitle;
+
+  /// No description provided for @deleteSubjectConfirmation.
+  ///
+  /// In en, this message translates to:
+  /// **'Are you sure you want to delete {name}? This action cannot be undone.'**
+  String deleteSubjectConfirmation(String name);
+
+  /// No description provided for @subjectNameEn.
+  ///
+  /// In en, this message translates to:
+  /// **'Subject Name (English)'**
+  String get subjectNameEn;
+
+  /// No description provided for @subjectNameUr.
+  ///
+  /// In en, this message translates to:
+  /// **'Subject Name (Urdu)'**
+  String get subjectNameUr;
+
+  /// No description provided for @subjectNameAr.
+  ///
+  /// In en, this message translates to:
+  /// **'Subject Name (Arabic)'**
+  String get subjectNameAr;
+
+  /// No description provided for @enterSubjectNameEn.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter subject name in English'**
+  String get enterSubjectNameEn;
+
+  /// No description provided for @enterSubjectNameUr.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter subject name in Urdu'**
+  String get enterSubjectNameUr;
+
+  /// No description provided for @enterSubjectNameAr.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter subject name in Arabic'**
+  String get enterSubjectNameAr;
+
+  /// No description provided for @subjectAddedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Subject added successfully'**
+  String get subjectAddedSuccess;
+
+  /// No description provided for @subjectUpdatedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Subject updated successfully'**
+  String get subjectUpdatedSuccess;
+
+  /// No description provided for @subjectDeletedSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Subject deleted successfully'**
+  String get subjectDeletedSuccess;
+
+  /// No description provided for @searchSubjects.
+  ///
+  /// In en, this message translates to:
+  /// **'Search subjects...'**
+  String get searchSubjects;
+
+  /// No description provided for @noSubjectsFound.
+  ///
+  /// In en, this message translates to:
+  /// **'No subjects found'**
+  String get noSubjectsFound;
+
+  /// No description provided for @noSubjectsYet.
+  ///
+  /// In en, this message translates to:
+  /// **'No subjects added yet'**
+  String get noSubjectsYet;
+
+  /// No description provided for @errorLoadingSubjects.
+  ///
+  /// In en, this message translates to:
+  /// **'Failed to load subjects'**
+  String get errorLoadingSubjects;
+
+  /// No description provided for @activeStatus.
+  ///
+  /// In en, this message translates to:
+  /// **'Active Status'**
+  String get activeStatus;
+
+  /// No description provided for @teachingAssignments.
+  ///
+  /// In en, this message translates to:
+  /// **'Teaching Assignments'**
+  String get teachingAssignments;
+
+  /// No description provided for @addAssignment.
+  ///
+  /// In en, this message translates to:
+  /// **'Add Assignment'**
+  String get addAssignment;
+
+  /// No description provided for @removeAssignment.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove Assignment'**
+  String get removeAssignment;
+
+  /// No description provided for @duplicateAssignmentError.
+  ///
+  /// In en, this message translates to:
+  /// **'Duplicate assignment found. Please remove or change.'**
+  String get duplicateAssignmentError;
+
+  /// No description provided for @noAssignmentsAdded.
+  ///
+  /// In en, this message translates to:
+  /// **'No teaching assignments added.'**
+  String get noAssignmentsAdded;
+
+  /// No description provided for @assignment.
+  ///
+  /// In en, this message translates to:
+  /// **'Assignment'**
+  String get assignment;
 }
 
 class _AppLocalizationsDelegate

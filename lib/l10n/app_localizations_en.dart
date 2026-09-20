@@ -404,4 +404,150 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get noClassesAvailableCreateFirst =>
       'No active classes available. Please create a class first.';
+
+  @override
+  String get searchTeachers => 'Search by name, father name, phone...';
+
+  @override
+  String get noTeachersFound => 'No teachers found';
+
+  @override
+  String get noTeachersYet => 'No teachers added yet';
+
+  @override
+  String get errorLoadingTeachers => 'Failed to load teachers';
+
+  @override
+  String get teacherName => 'Teacher Name';
+
+  @override
+  String get enterTeacherName => 'Enter teacher name';
+
+  @override
+  String get addNewTeacher => 'Add New Teacher';
+
+  @override
+  String get editTeacher => 'Edit Teacher';
+
+  @override
+  String get saveTeacher => 'Save Teacher';
+
+  @override
+  String get updateTeacher => 'Update Teacher';
+
+  @override
+  String get teacherAddedSuccess => 'Teacher added successfully';
+
+  @override
+  String get teacherUpdatedSuccess => 'Teacher updated successfully';
+
+  @override
+  String get teacherDeletedSuccess => 'Teacher deleted successfully';
+
+  @override
+  String get deleteTeacherTitle => 'Delete Teacher';
+
+  @override
+  String deleteTeacherConfirmation(String name) {
+    return 'Are you sure you want to delete $name? This action cannot be undone.';
+  }
+
+  @override
+  String get qualification => 'Qualification';
+
+  @override
+  String get enterQualification => 'Enter qualification (optional)';
+
+  @override
+  String get assignedClasses => 'Assigned Classes';
+
+  @override
+  String get noClassesAssigned => 'No classes assigned';
+
+  @override
+  String get selectAssignedClasses => 'Select classes taught by this teacher';
+
+  @override
+  String get subjects => 'Subjects';
+
+  @override
+  String get viewManageSubjects => 'View and manage subjects';
+
+  @override
+  String get addSubject => 'Add Subject';
+
+  @override
+  String get editSubject => 'Edit Subject';
+
+  @override
+  String get deleteSubject => 'Delete Subject';
+
+  @override
+  String get deleteSubjectTitle => 'Delete Subject';
+
+  @override
+  String deleteSubjectConfirmation(String name) {
+    return 'Are you sure you want to delete $name? This action cannot be undone.';
+  }
+
+  @override
+  String get subjectNameEn => 'Subject Name (English)';
+
+  @override
+  String get subjectNameUr => 'Subject Name (Urdu)';
+
+  @override
+  String get subjectNameAr => 'Subject Name (Arabic)';
+
+  @override
+  String get enterSubjectNameEn => 'Enter subject name in English';
+
+  @override
+  String get enterSubjectNameUr => 'Enter subject name in Urdu';
+
+  @override
+  String get enterSubjectNameAr => 'Enter subject name in Arabic';
+
+  @override
+  String get subjectAddedSuccess => 'Subject added successfully';
+
+  @override
+  String get subjectUpdatedSuccess => 'Subject updated successfully';
+
+  @override
+  String get subjectDeletedSuccess => 'Subject deleted successfully';
+
+  @override
+  String get searchSubjects => 'Search subjects...';
+
+  @override
+  String get noSubjectsFound => 'No subjects found';
+
+  @override
+  String get noSubjectsYet => 'No subjects added yet';
+
+  @override
+  String get errorLoadingSubjects => 'Failed to load subjects';
+
+  @override
+  String get activeStatus => 'Active Status';
+
+  @override
+  String get teachingAssignments => 'Teaching Assignments';
+
+  @override
+  String get addAssignment => 'Add Assignment';
+
+  @override
+  String get removeAssignment => 'Remove Assignment';
+
+  @override
+  String get duplicateAssignmentError =>
+      'Duplicate assignment found. Please remove or change.';
+
+  @override
+  String get noAssignmentsAdded => 'No teaching assignments added.';
+
+  @override
+  String get assignment => 'Assignment';
 }

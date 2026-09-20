@@ -404,4 +404,150 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get noClassesAvailableCreateFirst =>
       'لا توجد فصول دراسية متاحة. يرجى إنشاء فصل أولاً.';
+
+  @override
+  String get searchTeachers => 'البحث بالاسم، اسم الأب، الهاتف، المؤهل...';
+
+  @override
+  String get noTeachersFound => 'لم يتم العثور على معلمين';
+
+  @override
+  String get noTeachersYet => 'لم تتم إضافة معلمين بعد';
+
+  @override
+  String get errorLoadingTeachers => 'فشل في تحميل المعلمين';
+
+  @override
+  String get teacherName => 'اسم المعلم';
+
+  @override
+  String get enterTeacherName => 'أدخل اسم المعلم';
+
+  @override
+  String get addNewTeacher => 'إضافة معلم جديد';
+
+  @override
+  String get editTeacher => 'تعديل بيانات المعلم';
+
+  @override
+  String get saveTeacher => 'حفظ المعلم';
+
+  @override
+  String get updateTeacher => 'تحديث بيانات المعلم';
+
+  @override
+  String get teacherAddedSuccess => 'تمت إضافة المعلم بنجاح';
+
+  @override
+  String get teacherUpdatedSuccess => 'تم تحديث بيانات المعلم بنجاح';
+
+  @override
+  String get teacherDeletedSuccess => 'تم حذف المعلم بنجاح';
+
+  @override
+  String get deleteTeacherTitle => 'حذف المعلم';
+
+  @override
+  String deleteTeacherConfirmation(String name) {
+    return 'هل أنت متأكد أنك تريد حذف $name؟ لا يمكن التراجع عن هذا الإجراء.';
+  }
+
+  @override
+  String get qualification => 'المؤهل العلمي';
+
+  @override
+  String get enterQualification => 'أدخل المؤهل العلمي (اختياري)';
+
+  @override
+  String get assignedClasses => 'الفصول المسندة';
+
+  @override
+  String get noClassesAssigned => 'لا توجد فصول مسندة';
+
+  @override
+  String get selectAssignedClasses => 'حدد الفصول التي يدرسها هذا المعلم';
+
+  @override
+  String get subjects => 'المواد الدراسية';
+
+  @override
+  String get viewManageSubjects => 'عرض وإدارة المواد الدراسية';
+
+  @override
+  String get addSubject => 'إضافة مادة دراسية';
+
+  @override
+  String get editSubject => 'تعديل المادة الدراسية';
+
+  @override
+  String get deleteSubject => 'حذف المادة الدراسية';
+
+  @override
+  String get deleteSubjectTitle => 'حذف المادة الدراسية';
+
+  @override
+  String deleteSubjectConfirmation(String name) {
+    return 'هل أنت متأكد أنك تريد حذف $name؟ لا يمكن التراجع عن هذا الإجراء.';
+  }
+
+  @override
+  String get subjectNameEn => 'اسم المادة (الإنجليزية)';
+
+  @override
+  String get subjectNameUr => 'اسم المادة (الأردية)';
+
+  @override
+  String get subjectNameAr => 'اسم المادة (العربية)';
+
+  @override
+  String get enterSubjectNameEn => 'أدخل اسم المادة بالإنجليزية';
+
+  @override
+  String get enterSubjectNameUr => 'أدخل اسم المادة بالأردية';
+
+  @override
+  String get enterSubjectNameAr => 'أدخل اسم المادة بالعربية';
+
+  @override
+  String get subjectAddedSuccess => 'تمت إضافة المادة الدراسية بنجاح';
+
+  @override
+  String get subjectUpdatedSuccess => 'تم تحديث بيانات المادة بنجاح';
+
+  @override
+  String get subjectDeletedSuccess => 'تم حذف المادة الدراسية بنجاح';
+
+  @override
+  String get searchSubjects => 'البحث في المواد الدراسية...';
+
+  @override
+  String get noSubjectsFound => 'لم يتم العثور على مواد دراسية';
+
+  @override
+  String get noSubjectsYet => 'لم تتم إضافة أي مادة دراسية بعد';
+
+  @override
+  String get errorLoadingSubjects => 'فشل في تحميل المواد الدراسية';
+
+  @override
+  String get activeStatus => 'الحالة';
+
+  @override
+  String get teachingAssignments => 'مهام التدريس';
+
+  @override
+  String get addAssignment => 'إضافة مهمة';
+
+  @override
+  String get removeAssignment => 'إزالة المهمة';
+
+  @override
+  String get duplicateAssignmentError =>
+      'هذه المهمة موجودة بالفعل. يرجى التغيير.';
+
+  @override
+  String get noAssignmentsAdded => 'لم تتم إضافة مهام تدريس.';
+
+  @override
+  String get assignment => 'مهمة';
 }
