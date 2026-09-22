@@ -1149,6 +1149,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Assignment'**
   String get assignment;
+
+  /// No description provided for @teacherNotLinked.
+  ///
+  /// In en, this message translates to:
+  /// **'Teacher account is not linked to a profile. Please contact the administrator.'**
+  String get teacherNotLinked;
+
+  /// No description provided for @noClassesAssignedToYou.
+  ///
+  /// In en, this message translates to:
+  /// **'No classes have been assigned to you yet.'**
+  String get noClassesAssignedToYou;
 }
 
 class _AppLocalizationsDelegate

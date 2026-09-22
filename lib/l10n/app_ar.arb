@@ -175,5 +175,7 @@
   "removeAssignment": "إزالة المهمة",
   "duplicateAssignmentError": "هذه المهمة موجودة بالفعل. يرجى التغيير.",
   "noAssignmentsAdded": "لم تتم إضافة مهام تدريس.",
-  "assignment": "مهمة"
+  "assignment": "مهمة",
+  "teacherNotLinked": "حساب المعلم غير مرتبط بملف تعريف. يرجى الاتصال بالمسؤول.",
+  "noClassesAssignedToYou": "لم يتم تعيين أي فصول لك حتى الآن."
 }

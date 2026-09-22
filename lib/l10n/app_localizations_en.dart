@@ -550,4 +550,12 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get assignment => 'Assignment';
+
+  @override
+  String get teacherNotLinked =>
+      'Teacher account is not linked to a profile. Please contact the administrator.';
+
+  @override
+  String get noClassesAssignedToYou =>
+      'No classes have been assigned to you yet.';
 }

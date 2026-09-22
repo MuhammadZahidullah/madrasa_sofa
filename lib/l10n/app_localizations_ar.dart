@@ -550,4 +550,11 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get assignment => 'مهمة';
+
+  @override
+  String get teacherNotLinked =>
+      'حساب المعلم غير مرتبط بملف تعريف. يرجى الاتصال بالمسؤول.';
+
+  @override
+  String get noClassesAssignedToYou => 'لم يتم تعيين أي فصول لك حتى الآن.';
 }

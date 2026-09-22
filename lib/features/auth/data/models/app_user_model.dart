@@ -7,6 +7,7 @@ class AppUserModel extends AppUser {
     required super.email,
     required super.role,
     required super.isActive,
+    super.teacherId,
   });
 
   factory AppUserModel.fromJson(Map<String, dynamic> json) {
@@ -25,6 +26,7 @@ class AppUserModel extends AppUser {
       email: json['email']?.toString() ?? '',
       role: json['role']?.toString() ?? '',
       isActive: parsedIsActive,
+      teacherId: json['teacherId']?.toString(),
     );
   }
 
@@ -35,6 +37,7 @@ class AppUserModel extends AppUser {
       'email': email,
       'role': role,
       'isActive': isActive,
+      if (teacherId != null) 'teacherId': teacherId,
     };
   }
 }

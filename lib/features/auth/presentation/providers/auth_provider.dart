@@ -74,6 +74,16 @@ class AuthProvider with ChangeNotifier {
         notifyListeners();
         return false;
       }
+
+      if (profile.role == 'teacher') {
+        if (profile.teacherId == null || profile.teacherId!.isEmpty) {
+          _errorMessage = 'teacher-not-linked';
+          _isProfileLoading = false;
+          notifyListeners();
+          return false;
+        }
+      }
+
       _appUser = profile;
       _isProfileLoading = false;
       notifyListeners();

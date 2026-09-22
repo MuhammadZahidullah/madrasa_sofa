@@ -227,5 +227,7 @@
   "removeAssignment": "Remove Assignment",
   "duplicateAssignmentError": "Duplicate assignment found. Please remove or change.",
   "noAssignmentsAdded": "No teaching assignments added.",
-  "assignment": "Assignment"
+  "assignment": "Assignment",
+  "teacherNotLinked": "Teacher account is not linked to a profile. Please contact the administrator.",
+  "noClassesAssignedToYou": "No classes have been assigned to you yet."
 }

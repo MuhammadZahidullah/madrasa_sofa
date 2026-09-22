@@ -17,15 +17,17 @@ class TeachingAssignmentRemoteDataSourceImpl implements TeachingAssignmentRemote
   Future<List<TeachingAssignmentModel>> getAssignmentsByTeacher(String teacherId) async {
     try {
       final snapshot = await firestore
-          .collection(collectionPath)
+          .collection('teachingAssignments')
           .where('teacherId', isEqualTo: teacherId)
           .get();
 
       return snapshot.docs
-          .map((doc) => TeachingAssignmentModel.fromFirestore(doc))
+          .map((doc) {
+            return TeachingAssignmentModel.fromFirestore(doc);
+          })
           .toList();
     } catch (e) {
-      throw Exception('Failed to fetch teaching assignments: $e');
+      throw Exception('Failed to fetch assignments for teacher: $e');
     }
   }
 

@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:madrasa_soffa/l10n/app_localizations.dart';
 import 'package:madrasa_soffa/features/auth/presentation/providers/auth_provider.dart';
 import 'package:madrasa_soffa/core/localization/locale_provider.dart';
+import 'package:madrasa_soffa/features/dashboard/presentation/screens/teacher_my_classes_screen.dart';
 
 class TeacherDashboard extends StatelessWidget {
   const TeacherDashboard({super.key});
@@ -43,7 +44,18 @@ class TeacherDashboard extends StatelessWidget {
                 crossAxisSpacing: 16,
                 children: [
                   _buildDashboardCard(context, l10n.myStudents, Icons.people),
-                  _buildDashboardCard(context, l10n.myClasses, Icons.class_),
+                  _buildDashboardCard(
+                    context, 
+                    l10n.myClasses, 
+                    Icons.class_,
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => const TeacherMyClassesScreen(),
+                        ),
+                      );
+                    },
+                  ),
                   _buildDashboardCard(
                     context,
                     l10n.takeAttendance,
@@ -93,16 +105,21 @@ class TeacherDashboard extends StatelessWidget {
   Widget _buildDashboardCard(
     BuildContext context,
     String title,
-    IconData icon,
-  ) {
+    IconData icon, {
+    VoidCallback? onTap,
+  }) {
     final l10n = AppLocalizations.of(context)!;
     return Card(
       elevation: 2,
       child: InkWell(
         onTap: () {
-          ScaffoldMessenger.of(
-            context,
-          ).showSnackBar(SnackBar(content: Text(l10n.comingSoon)));
+          if (onTap != null) {
+            onTap();
+          } else {
+            ScaffoldMessenger.of(
+              context,
+            ).showSnackBar(SnackBar(content: Text(l10n.comingSoon)));
+          }
         },
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

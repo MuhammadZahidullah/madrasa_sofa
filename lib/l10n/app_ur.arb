@@ -175,5 +175,7 @@
   "removeAssignment": "ذمہ داری ہٹائیں",
   "duplicateAssignmentError": "یہ ذمہ داری پہلے سے موجود ہے۔ براہ کرم تبدیل کریں۔",
   "noAssignmentsAdded": "کوئی تدریسی ذمہ داری شامل نہیں کی گئی۔",
-  "assignment": "ذمہ داری"
+  "assignment": "ذمہ داری",
+  "teacherNotLinked": "استاد کا اکاؤنٹ پروفائل سے منسلک نہیں ہے۔ براہ کرم منتظم سے رابطہ کریں۔",
+  "noClassesAssignedToYou": "آپ کو ابھی تک کوئی کلاس تفویض نہیں کی گئی ہے۔"
 }

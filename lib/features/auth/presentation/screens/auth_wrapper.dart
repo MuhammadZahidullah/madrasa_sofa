@@ -24,10 +24,13 @@ class _AuthWrapperState extends State<AuthWrapper> {
     if (!_isInit) {
       final user = FirebaseAuth.instance.currentUser;
       if (user != null) {
-        Provider.of<AuthProvider>(
-          context,
-          listen: false,
-        ).fetchProfile(user.uid);
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (!mounted) return;
+          Provider.of<AuthProvider>(
+            context,
+            listen: false,
+          ).fetchProfile(user.uid);
+        });
       }
       _isInit = true;
     }
@@ -118,6 +121,8 @@ class _AuthWrapperState extends State<AuthWrapper> {
       return l10n.unknownRole;
     } else if (errorCode == 'profile-fetch-failed') {
       return l10n.profileFetchFailed;
+    } else if (errorCode == 'teacher-not-linked') {
+      return l10n.teacherNotLinked;
     }
     return errorCode;
   }

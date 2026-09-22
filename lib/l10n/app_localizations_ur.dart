@@ -552,4 +552,12 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get assignment => 'ذمہ داری';
+
+  @override
+  String get teacherNotLinked =>
+      'استاد کا اکاؤنٹ پروفائل سے منسلک نہیں ہے۔ براہ کرم منتظم سے رابطہ کریں۔';
+
+  @override
+  String get noClassesAssignedToYou =>
+      'آپ کو ابھی تک کوئی کلاس تفویض نہیں کی گئی ہے۔';
 }

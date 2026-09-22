@@ -4,6 +4,7 @@ class AppUser {
   final String email;
   final String role;
   final bool isActive;
+  final String? teacherId;
 
   AppUser({
     required this.uid,
@@ -11,5 +12,6 @@ class AppUser {
     required this.email,
     required this.role,
     required this.isActive,
+    this.teacherId,
   });
 }
