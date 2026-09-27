@@ -3,6 +3,7 @@ import '../models/student_model.dart';
 
 abstract class StudentRemoteDataSource {
   Future<List<StudentModel>> getStudents();
+  Future<List<StudentModel>> getStudentsByClassId(String classId);
   Future<StudentModel> getStudentById(String id);
   Future<void> addStudent(StudentModel student);
   Future<void> updateStudent(StudentModel student);
@@ -17,6 +18,15 @@ class StudentRemoteDataSourceImpl implements StudentRemoteDataSource {
   @override
   Future<List<StudentModel>> getStudents() async {
     final snapshot = await firestore.collection('students').get();
+    return snapshot.docs.map((doc) => StudentModel.fromFirestore(doc)).toList();
+  }
+
+  @override
+  Future<List<StudentModel>> getStudentsByClassId(String classId) async {
+    final snapshot = await firestore
+        .collection('students')
+        .where('classId', isEqualTo: classId)
+        .get();
     return snapshot.docs.map((doc) => StudentModel.fromFirestore(doc)).toList();
   }
 

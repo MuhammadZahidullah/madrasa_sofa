@@ -13,16 +13,6 @@ class AttendanceModel extends Attendance {
     required super.updatedAt,
   });
 
-  /// Generates a deterministic document ID for an attendance record.
-  /// The same student + class + date will always resolve to the same ID.
-  static String generateId({
-    required String classId,
-    required String studentId,
-    required String dateKey,
-  }) {
-    return '${classId}_${studentId}_$dateKey';
-  }
-
   factory AttendanceModel.fromEntity(Attendance entity) {
     return AttendanceModel(
       id: entity.id,

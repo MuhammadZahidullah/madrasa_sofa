@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import '../../domain/entities/attendance.dart';
 import '../models/attendance_model.dart';
 
 abstract class AttendanceRemoteDataSource {
@@ -66,7 +67,7 @@ class AttendanceRemoteDataSourceImpl implements AttendanceRemoteDataSource {
       for (var record in records) {
         // Enforce deterministic ID generation at the data source layer.
         // This protects against the caller supplying an arbitrary ID.
-        final deterministicId = AttendanceModel.generateId(
+        final deterministicId = Attendance.generateId(
           classId: record.classId,
           studentId: record.studentId,
           dateKey: record.dateKey,

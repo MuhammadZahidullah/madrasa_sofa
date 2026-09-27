@@ -15,6 +15,12 @@ class StudentRepositoryImpl implements StudentRepository {
   }
 
   @override
+  Future<List<Student>> getStudentsByClassId(String classId) async {
+    final studentModels = await remoteDataSource.getStudentsByClassId(classId);
+    return List<Student>.from(studentModels);
+  }
+
+  @override
   Future<Student> getStudentById(String id) async {
     return await remoteDataSource.getStudentById(id);
   }
